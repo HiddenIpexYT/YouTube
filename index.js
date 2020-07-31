@@ -18,4 +18,4 @@ client.on('message', async message => {
     }
 });
 
-client.login('NzM0MTA5NTQyMTYxNDQ5MDEy.XxM6yQ.98RQr0OpC_S8vGkxl1C1stpGDxw') //Put your token here!
+client.login('') //Put your token here!
