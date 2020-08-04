@@ -15,6 +15,16 @@ client.on('message', async message => {
 
     if(command === 'ping'){
         message.channel.send('Pong!') //The bot will respond with pong!
+    } else if(command === 'embed'){
+        const embed = new Discord.MessageEmbed();
+        embed.setTitle('User Info')
+        .setDescription('Thank you for watching this video!')
+        .addField('Player username:', message.author.username)
+        .setThumbnail(message.author.displayAvatarURL());
+        embed.setFooter('Made by me')
+        .setAuthor(client.user.username)
+        .setColor('#FF0000')
+        message.channel.send(embed);
     }
 });
 
